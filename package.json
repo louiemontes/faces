@@ -4,7 +4,9 @@
   "description": "faces =====",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "ecstatic --port 1338 --cache 0"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   "homepage": "https://github.com/louiemontes/faces#readme",
   "devDependencies": {
     "ecstatic": "^1.4.1",
+    "json-loader": "^0.5.4",
     "meshblu": "^1.33.1",
     "webpack": "^1.13.1"
   }
