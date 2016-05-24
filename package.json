@@ -1,0 +1,24 @@
+{
+  "name": "faces",
+  "version": "1.0.0",
+  "description": "faces =====",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louiemontes/faces.git"
+  },
+  "author": "LouD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louiemontes/faces/issues"
+  },
+  "homepage": "https://github.com/louiemontes/faces#readme",
+  "devDependencies": {
+    "ecstatic": "^1.4.1",
+    "meshblu": "^1.33.1",
+    "webpack": "^1.13.1"
+  }
+}
