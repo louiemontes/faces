@@ -51,7 +51,7 @@ function decideFace() {
 
 function showCurrentSentimentInConsole() {
   console.log(currentSentiment);
-}
+};
 
 conn.on('ready', function(data){
   console.log("ready", data);
