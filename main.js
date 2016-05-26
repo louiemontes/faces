@@ -5,9 +5,12 @@ var conn = meshblu.createConnection({});
 
 function setMood(mood) {
   document.getElementById("face").className="face " + mood;
-  document.getElementById("lefteye").className="eyes lefteye " + mood;
-  document.getElementById("righteye").className="eyes righteye " + mood;
+  document.getElementById("lefteye").className="eyes left " + mood;
+  document.getElementById("righteye").className="eyes right " + mood;
   document.getElementById("mouth").className="mouth " + mood;
+  document.getElementById("face").className="face " + mood;
+  document.getElementById("leftbrow").className="brows left " + mood;
+  document.getElementById("rightbrow").className="brows right " + mood;
 
 };
 
