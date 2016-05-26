@@ -1,0 +1,277 @@
+/*Face dimensions and moods for faces*/
+div.face {
+	margin: auto;
+	border: 1px solid #000000;
+	height: 700px;
+	width: 500px;
+	top:25px;
+	bottom: 50px;
+	position: relative;
+	border-radius: 350px;
+	-webkit-border-radius: 450px;
+	-moz-border-radius: 450px;
+	display: block;
+	box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+	-webkit-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+	-moz-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+  transition: all 600ms ease-in-out;
+  }
+div.face.angry{
+	background: #CC0000;
+}
+div.face.upset{
+	background: #FFC0CB;
+}
+div.face.mellow{
+	background: #FFFF99;
+}
+div.face.happy{
+	background: #90EE90;
+}
+div.face.ecstatic{
+	background: #33FF33;
+}
+
+/*Eyes dimensions and moods for eyes*/
+p.eyes {
+	width: 60px;
+	height: 90px;
+	border-radius: 100px/160px;
+	-webkit-border-radius: 100px 160px;
+	-moz-border-radius: 100px/160px;
+	position: absolute;
+	top: 25%;
+	bottom: 20%;
+	box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+	-webkit-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+	-moz-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+  transition: all 600ms ease-in-out;
+}
+p.eyes.left {
+	left: 25%;
+}
+p.eyes.left.angry {
+	background: yellow;
+  top: 30%;
+	height: 40px;
+	width: 60px;
+}
+p.eyes.left.upset {
+  top:30%;
+	background: black;
+	height: 40px;
+	width: 70px;
+}
+p.eyes.left.mellow {
+	background: black;
+}
+p.eyes.left.happy {
+	background: black;
+	width: 70px;
+	height: 100px;
+}
+p.eyes.left.ecstatic {
+	top: 15%;
+	width: 100px;
+	height: 150px;
+	border-radius: 100px/160px;
+	-webkit-border-radius: 100px 160px;
+	-moz-border-radius: 100px/160px;
+	background: green;
+}
+p.eyes.right {
+	right: 25%;
+}
+p.eyes.right.angry {
+	background: yellow;
+  top:30%;
+	height: 40px;
+	width: 60px;
+}
+p.eyes.right.upset {
+  top:30%;
+	background: black;
+	height: 40px;
+	width: 70px;
+}
+p.eyes.right.mellow {
+	background: black;
+}
+p.eyes.right.happy {
+	background: black;
+	width: 70px;
+	height: 100px;
+}
+p.eyes.right.ecstatic {
+	top: 15%;
+	width: 100px;
+	height: 150px;
+	border-radius: 100px/160px;
+	-webkit-border-radius: 100px 160px;
+	-moz-border-radius: 100px/160px;
+	background: green;
+}
+
+/*Mouth dimensions and moods for mouths*/
+div.mouth {
+	margin:auto;
+  box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+	-webkit-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+	-moz-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+  transition: all 600ms ease-in-out;
+
+}
+div.mouth.angry {
+  width: 0px;
+	height: 0px;
+	border: 150px solid #222;
+	border-top: 10;
+	border-top: 0px;
+	background: rgba(0,0,0,0);
+	-moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	-webkit-border-radius: 0 0 120px 120px 0 0 90px 90px;
+	border-radius: 0 0 240px 240px / 0 0 240px 240px;
+	position: relative;
+	top: 55%;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotate(180deg);
+	transition: all 600ms ease-in-out;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotate(180deg);
+  box-shadow: inset 0px -14px 14px rgba(0, 0, 0, 10), 4px -4px 20px rgba(0, 0, 0, 0.9);
+  }
+div.mouth.upset {
+  width: 200px;
+	height: 90px;
+	border: 20px solid #222;
+	border-top: 0;
+	background: rgba(0,0,0,0);
+	-moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	-webkit-border-radius: 0 0 120px 120px 0 0 90px 90px;
+	border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	position: relative;
+	top: 70%;
+  box-shadow: inset 0px -14px 14px rgba(0, 0, 0, 1), 0px 2px 20px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, 0.6), 0px 2px 20px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, 0), 0px 2px 20px rgba(0, 0, 0, 0);
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotate(180deg);
+}
+div.mouth.mellow {
+	width: 300px;
+	height: 0px;
+	border: 20px solid #222;
+	border-top: 0;
+	-moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	-webkit-border-radius: 0 0 120px 120px 0 0 90px 90px;
+	border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	position: relative;
+	top: 70%;
+}
+div.mouth.happy {
+  width: 200px;
+	height: 70px;
+	border: 10px solid #222;
+	border-top: 0;
+	background: rgba(0,0,0,0);
+	-moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	-webkit-border-radius: 0 0 120px 120px 0 0 90px 90px;
+	border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	position: relative;
+  top: 65%;
+	box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0), 0px 5px 2px 0px rgba(0, 0, 0, 0.7);
+}
+div.mouth.ecstatic {
+  width: 0px;
+	height: 0px;
+	border: 170px solid #222;
+	border-top: 10;
+	border-top: 0px;
+	background: rgba(0,0,0,0);
+	-moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	-webkit-border-radius: 0 0 120px 120px 0 0 90px 90px;
+	border-radius: 0 0 240px 240px / 0 0 240px 240px;
+	position: relative;
+	top: 60%;
+	box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0), 0px 5px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+/*Brow dimensions and moods for brows*/
+div.brows {
+  margin: auto;
+  width: 15px;
+  height: 90px;
+  background: #222;
+  border-radius: 100px/160px;
+  -webkit-border-radius: 100px 160px;
+  -moz-border-radius: 100px/160px;
+  position: absolute;
+  top: 15%;
+  box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+  -webkit-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+  -moz-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+  transition: all 600ms ease-in-out;
+}
+div.brows.left {
+  left: 22.5%;
+
+}
+div.brows.right {
+  right: 22.5%;
+}
+div.brows.left.angry {
+  left: 30%;
+  top: 21%;
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+}
+div.brows.left.upset {
+  top: 20%;
+  left: 30%;
+  -webkit-transform: rotate(110deg);
+  -moz-transform: rotate(110deg);
+}
+div.brows.left.mellow {
+  left: 30%;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+div.brows.left.happy {
+  left: 30%;
+  -webkit-transform: rotate(80deg);
+  -moz-transform: rotate(80deg);
+}
+div.brows.left.ecstatic {
+  top: 8%;
+  left: 30%;
+  -webkit-transform: rotate(70deg);
+  -moz-transform: rotate(70deg);
+}
+div.brows.right.angry {
+  right: 30%;
+  top: 21%;
+  -webkit-transform: rotate(-120deg);
+  -moz-transform: rotate(-120deg);
+}
+div.brows.right.upset {
+  top: 20%;
+  right: 30%;
+  -webkit-transform: rotate(-110deg);
+  -moz-transform: rotate(-110deg);
+}
+div.brows.right.mellow{
+  right: 30%;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+}
+div.brows.right.happy {
+  right: 30%;
+  -webkit-transform: rotate(-80deg);
+  -moz-transform: rotate(-80deg);
+}
+div.brows.right.ecstatic {
+  top: 8%;
+  right: 30%;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+}

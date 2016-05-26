@@ -2,9 +2,28 @@
 <html>
 	<head>
 		<title>tbd</title>
+		<link rel="stylesheet" href="styles.css" />
+		<!-- <script>
+		function setMood(mood) {
+		  document.getElementById("face").className="face " + mood;
+		  document.getElementById("lefteye").className="eyes left " + mood;
+		  document.getElementById("righteye").className="eyes right " + mood;
+		  document.getElementById("mouth").className="mouth " + mood;
+			document.getElementById("leftbrow").className="brows left " + mood;
+			document.getElementById("rightbrow").className="brows right " + mood;
+		};
+		  </script> -->
 	</head>
 	<body>
-	test
+		<div class="face mellow" id="face">
+	      <p class="eyes left mellow" id="lefteye"></p>
+	      <p class="eyes right mellow" id="righteye"></p>
+	      <div class="mouth mellow" id="mouth"></div>
+				<div class="brows left mellow" id="leftbrow"></div>
+				<div class="brows right mellow" id="rightbrow"></div>
+	  </div>
+
+		<!-- very important to uncomment below: -->
   <script src="main.bundle.js"></script>
 	</body>
 </html>
