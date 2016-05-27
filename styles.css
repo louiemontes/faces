@@ -55,6 +55,9 @@ p.eyes.left.angry {
   top: 30%;
 	height: 40px;
 	width: 60px;
+	box-shadow: inset 20px 0px 0px rgba(300, 300, 300, .61), 0px 2px 20px rgba(0, 0, 0, .6),
+		inset -20px 0px 0px rgba(300, 300, 300, .61), 0px 2px 20px rgba(0, 0, 0, .6),
+		inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
 }
 p.eyes.left.upset {
   top:30%;
@@ -87,6 +90,9 @@ p.eyes.right.angry {
   top:30%;
 	height: 40px;
 	width: 60px;
+	box-shadow: inset 20px 0px 0px rgba(300, 300, 300, .61), 0px 2px 20px rgba(0, 0, 0, .6),
+		inset -20px 0px 0px rgba(300, 300, 300, .61), 0px 2px 20px rgba(0, 0, 0, .6),
+		inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
 }
 p.eyes.right.upset {
   top:30%;
@@ -274,4 +280,16 @@ div.brows.right.ecstatic {
   right: 30%;
   -webkit-transform: rotate(-70deg);
   -moz-transform: rotate(-70deg);
+}
+
+div.textBox {
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 16px;
 }

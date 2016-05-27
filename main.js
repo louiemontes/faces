@@ -53,6 +53,11 @@ function showCurrentSentimentInConsole() {
   console.log(currentSentiment);
 };
 
+function inputText(text)
+{
+    document.getElementById("text").innerHTML = text;
+};
+
 conn.on('ready', function(data){
   console.log("ready", data);
   conn.subscribe({ uuid: "c8397dbe-aa11-463a-832b-4c6e5d81bbfc", types: ['broadcast']}, function(err){
@@ -65,5 +70,6 @@ conn.on('message', function(data){
   addSentiment(data.sentiment.score);
   decideFace();
   setMood(decideFace());
+  inputText(data.payload);
   showCurrentSentimentInConsole();
 });
