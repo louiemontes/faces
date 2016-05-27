@@ -19,6 +19,16 @@ function setMood(mood) {
 };
 
 function addSentiment(inputScore){
+  if (inputScore > 1) {
+    document.getElementById("text").className="textBox " + "ecstatic";
+  }
+  else if(inputScore < -1) {
+    document.getElementById("text").className="textBox " + "angry";
+  }
+  else {
+    document.getElementById("text").className="textBox " + "mellow";
+  }
+
  if(currentSentiment + inputScore <= MAX_SENTIMENT
     && currentSentiment + inputScore >= MIN_SENTIMENT) {
         currentSentiment += inputScore;
@@ -55,8 +65,12 @@ function showCurrentSentimentInConsole() {
 
 function inputText(text)
 {
-    document.getElementById("text").innerHTML = text;
+  if(text){
+    document.getElementById("text").innerHTML = text.replace(/</g,'').replace(/>/g, '');
+  }
 };
+
+// function textColorDecider()
 
 conn.on('ready', function(data){
   console.log("ready", data);

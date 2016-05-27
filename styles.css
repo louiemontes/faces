@@ -282,14 +282,30 @@ div.brows.right.ecstatic {
   -moz-transform: rotate(-70deg);
 }
 
-div.textBox {
-    padding: 0;
-    height: 30px;
-    position: relative;
-    left: 0;
-    outline: none;
-    border: 1px solid #cdcdcd;
-    border-color: rgba(0,0,0,.15);
-    background-color: white;
-    font-size: 16px;
+.textBox {
+	font-family: arial;
+	top: 4%;
+	font-size: 24px;
+	text-align: center;
+	padding: 0;
+	height: 30px;
+	position: relative;
+	left: 0;
+	outline: none;
+	border: 0px solid #cdcdcd;
+	border-color: rgba(0,0,0,.15);
+	background-color: rgba(255,255,255,0);
+	font-size: 34px;
+	text-shadow: 2px 2px rgba(0,0,255,0.8);
+	font-weight: bold;
+}
+
+.textBox.angry{
+	color: #CC0000;
+}
+.textBox.mellow{
+	color: #FFFF99;
+}
+.textBox.ecstatic{
+	color: #33FF33;
 }
