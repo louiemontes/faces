@@ -3,7 +3,7 @@ console.log("hello");
 var MAX_SENTIMENT = 40;
 var MIN_SENTIMENT = 0;
 var currentSentiment = 20;
-var currentFace = "mellow";
+// var currentFace = "mellow";
 // var messageScore = msg.sentiment.score;
 
 var conn = meshblu.createConnection({});
@@ -33,19 +33,19 @@ function addSentiment(inputScore){
 
 function decideFace() {
   if (currentSentiment >= 0 && currentSentiment <= 8) {
-      currentFace = 'angry';
+    return 'angry';
   }
   else if (currentSentiment >= 9 && currentSentiment <= 16) {
-      currentFace = 'upset';
+    return 'upset';
   }
   else if (currentSentiment >= 17 && currentSentiment <= 24) {
-      currentFace = 'mellow';
+    return 'mellow';
   }
   else if (currentSentiment >= 25 && currentSentiment <= 32) {
-      currentFace = 'happy';
+    return 'happy';
   }
   else if (currentSentiment >= 33 && currentSentiment <= 40) {
-      currentFace = 'ecstatic';
+    return 'ecstatic';
   }
 };
 
@@ -64,6 +64,6 @@ conn.on('message', function(data){
   console.log('message', data);
   addSentiment(data.sentiment.score);
   decideFace();
-  setMood(currentFace);
+  setMood(decideFace());
   showCurrentSentimentInConsole();
 });
