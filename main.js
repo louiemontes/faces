@@ -1,8 +1,8 @@
 var meshblu = require('meshblu');
 console.log("hello");
-var MAX_SENTIMENT = 40;
+var MAX_SENTIMENT = 30;
 var MIN_SENTIMENT = 0;
-var currentSentiment = 20;
+var currentSentiment = 15;
 // var currentFace = "mellow";
 // var messageScore = msg.sentiment.score;
 
@@ -24,7 +24,7 @@ function addSentiment(inputScore){
         currentSentiment += inputScore;
  }
  else if(currentSentiment + inputScore > MAX_SENTIMENT) {
-    currentSentiment = 40;
+    currentSentiment = 30;
  }
  else if(currentSentiment + inputScore < MIN_SENTIMENT) {
     currentSentiment = 0;
@@ -32,19 +32,19 @@ function addSentiment(inputScore){
 };
 
 function decideFace() {
-  if (currentSentiment >= 0 && currentSentiment <= 8) {
+  if (currentSentiment >= 0 && currentSentiment <= 6) {
     return 'angry';
   }
-  else if (currentSentiment >= 9 && currentSentiment <= 16) {
+  else if (currentSentiment >= 7 && currentSentiment <= 13) {
     return 'upset';
   }
-  else if (currentSentiment >= 17 && currentSentiment <= 24) {
+  else if (currentSentiment >= 14 && currentSentiment <= 16) {
     return 'mellow';
   }
-  else if (currentSentiment >= 25 && currentSentiment <= 32) {
+  else if (currentSentiment >= 17 && currentSentiment <= 23) {
     return 'happy';
   }
-  else if (currentSentiment >= 33 && currentSentiment <= 40) {
+  else if (currentSentiment >= 24 && currentSentiment <= 30) {
     return 'ecstatic';
   }
 };
