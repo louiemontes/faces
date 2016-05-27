@@ -1,3 +1,7 @@
+body {
+	background-color: lightgray;
+}
+
 /*Face dimensions and moods for faces*/
 div.face {
 	margin: auto;
@@ -302,6 +306,8 @@ div.brows.right.ecstatic {
 
 .textBox.angry{
 	color: #CC0000;
+	text-shadow: 2px 2px 2px rgba(0,0,0,1);
+
 }
 .textBox.mellow{
 	color: #FFFF99;
