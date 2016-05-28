@@ -3,6 +3,11 @@ console.log("hello");
 var MAX_SENTIMENT = 30;
 var MIN_SENTIMENT = 0;
 var currentSentiment = 15;
+var page = document.getElementById("page");
+
+page.addEventListener("click", function() {
+  page.webkitRequestFullscreen()
+}, false);
 
 var conn = meshblu.createConnection({});
 
@@ -70,6 +75,7 @@ function inputText(text) {
     }
   }
 };
+
 
 // function textColorDecider()
 

@@ -1,13 +1,20 @@
 body {
+}
+
+.page {
+	width: 100%;
+	height: 100%;
 	background-color: lightgray;
+
+	/*margin: auto;*/
 }
 
 /*Face dimensions and moods for faces*/
 div.face {
 	margin: auto;
 	border: 1px solid #000000;
-	height: 700px;
-	width: 500px;
+	height: 820px;
+	width: 600px;
 	top:25px;
 	bottom: 50px;
 	position: relative;
@@ -142,7 +149,7 @@ div.mouth.angry {
 	-webkit-border-radius: 0 0 120px 120px 0 0 90px 90px;
 	border-radius: 0 0 240px 240px / 0 0 240px 240px;
 	position: relative;
-	top: 55%;
+	top: 65%;
 	-webkit-transform: rotateX(180deg);
 	-moz-transform: rotate(180deg);
 	transition: all 600ms ease-in-out;
@@ -288,8 +295,7 @@ div.brows.right.ecstatic {
 
 .textBox {
 	font-family: arial;
-	top: 4%;
-	font-size: 24px;
+	top: 5%;
 	text-align: center;
 	padding: 0;
 	height: 30px;
@@ -299,7 +305,7 @@ div.brows.right.ecstatic {
 	border: 0px solid #cdcdcd;
 	border-color: rgba(0,0,0,.15);
 	background-color: rgba(255,255,255,0);
-	font-size: 34px;
+	font-size: 45px;
 	text-shadow: 2px 2px rgba(0,0,0,0.8);
 	font-weight: bold;
 }
