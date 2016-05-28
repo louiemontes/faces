@@ -300,7 +300,7 @@ div.brows.right.ecstatic {
 	border-color: rgba(0,0,0,.15);
 	background-color: rgba(255,255,255,0);
 	font-size: 34px;
-	text-shadow: 2px 2px rgba(0,0,255,0.8);
+	text-shadow: 2px 2px rgba(0,0,0,0.8);
 	font-weight: bold;
 }
 

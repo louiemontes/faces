@@ -3,8 +3,6 @@ console.log("hello");
 var MAX_SENTIMENT = 30;
 var MIN_SENTIMENT = 0;
 var currentSentiment = 15;
-// var currentFace = "mellow";
-// var messageScore = msg.sentiment.score;
 
 var conn = meshblu.createConnection({});
 
@@ -63,10 +61,13 @@ function showCurrentSentimentInConsole() {
   console.log(currentSentiment);
 };
 
-function inputText(text)
-{
+function inputText(text) {
   if(text){
-    document.getElementById("text").innerHTML = text.replace(/</g,'').replace(/>/g, '');
+    if(text.length > 30) {
+      document.getElementById("text").innerHTML = text.replace(/</g,'').replace(/>/g, '').substring(0, 30) + '…';
+    } else {
+      document.getElementById("text").innerHTML = text.replace(/</g,'').replace(/>/g, '');
+    }
   }
 };
 
