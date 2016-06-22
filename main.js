@@ -81,7 +81,7 @@ function inputText(text) {
 
 conn.on('ready', function(data){
   console.log("ready", data);
-  conn.subscribe({ uuid: "c8397dbe-aa11-463a-832b-4c6e5d81bbfc", types: ['broadcast']}, function(err){
+  conn.subscribe({ uuid: "c5e963f1-f7de-4e54-b7b9-29f14033c16b", types: ['broadcast']}, function(err){
     console.log('subscribed', err);
   });
 });
