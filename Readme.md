@@ -1,19 +1,20 @@
 faces
 =====
 
-Also showcases how to implement CSS3 Transitions 
+#What is this for?
+Main component for the old [Heatsync Lab Display](https://iceddev.com/blog/putting-a-face-on-the-local-lab/).
 
 ## Ecstatic
 ![ecstatic](readmePics/ecstatic.png)
 
 ## Happy
-![happy](readmePics/ecstatic.png)
+![happy](readmePics/happy.png)
 
 ## Mellow
-![mellow](readmePics/ecstatic.png)
+![mellow](readmePics/mellow.png)
 
 ## Upset
-![upset](readmePics/ecstatic.png)
+![upset](readmePics/upset.png)
 
 ## Angry
-![angry](readmePics/ecstatic.png)
+![angry](readmePics/angry.png)
